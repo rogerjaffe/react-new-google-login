@@ -27,7 +27,7 @@ export interface GsiButtonConfiguration {
     shape?: "rectangular" | "pill" | "circle" | "square";
     logo_alignment?: "left" | "center";
     width?: string;
-    local?: string;
+    locale?: string;
 }
 export interface PromptMomentNotification {
     isDisplayMoment: () => boolean;
@@ -79,5 +79,6 @@ export declare type GoogleSigninPropsType = {
     options?: GsiButtonConfiguration;
     signinCallback?: SigninCallback;
     errorCallback?: ErrorCallback;
+    className?: string;
 };
 export default function GoogleSignin(props: GoogleSigninPropsType): JSX.Element;

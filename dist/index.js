@@ -109,7 +109,7 @@ var getNonce = function (size) {
 };
 function GoogleSignin(props) {
     var _this = this;
-    var clientId = props.clientId, options = props.options, signinCallback = props.signinCallback, errorCallback = props.errorCallback;
+    var clientId = props.clientId, options = props.options, signinCallback = props.signinCallback, errorCallback = props.errorCallback, className = props.className;
     var _a = React.useState(), google = _a[0], setGoogle = _a[1];
     var _b = React.useState(true), googleIsLoading = _b[0], setGoogleIsLoading = _b[1];
     var divRef = React.useRef(null);
@@ -157,7 +157,7 @@ function GoogleSignin(props) {
             }
         }
     }, [clientId, errorCallback, google, options, signinCallback]);
-    return React.createElement("div", { ref: divRef });
+    return React.createElement("div", { className: className, ref: divRef });
 }
 
 exports.default = GoogleSignin;

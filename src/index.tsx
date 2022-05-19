@@ -122,6 +122,7 @@ export type GoogleSigninPropsType = {
   options?: GsiButtonConfiguration;
   signinCallback?: SigninCallback;
   errorCallback?: ErrorCallback;
+  className?: string;
 };
 
 const NONCE_SIZE = 20;
@@ -137,7 +138,7 @@ const getNonce = (size = NONCE_SIZE) => {
 };
 
 export default function GoogleSignin(props: GoogleSigninPropsType) {
-  const { clientId, options, signinCallback, errorCallback } = props;
+  const { clientId, options, signinCallback, errorCallback, className } = props;
   const [google, setGoogle] = useState();
   const [googleIsLoading, setGoogleIsLoading] = useState(true);
 
@@ -190,5 +191,5 @@ export default function GoogleSignin(props: GoogleSigninPropsType) {
     }
   }, [clientId, errorCallback, google, options, signinCallback]);
 
-  return <div ref={divRef} />;
+  return <div className={className} ref={divRef} />;
 }
