@@ -1,0 +1,39 @@
+{
+  "name": "react-new-google-login",
+  "version": "0.1.1",
+  "private": false,
+  "description": "React New Google Login component",
+  "main": "dist/index.js",
+  "repository": "https://github.com/rogerjaffe/react-new-google-login",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerjaffe/react-new-google-login.git"
+  },  "keywords": [],
+  "author": "Roger Jaffe",
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "files": [
+    "dist",
+    "Readme.md"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@rollup/plugin-babel": "^5.3.1",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "prettier": "^2.6.2",
+    "rollup": "^1.29.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^2.8.3"
+  }
+}
