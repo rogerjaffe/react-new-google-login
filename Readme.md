@@ -28,6 +28,7 @@ const App = () => {
           signinCallback={signin}
           errorCallback={error}
           options={options}
+          className={className}
         />
       <div>{token}</div>
     </div>
@@ -46,6 +47,10 @@ The Client ID obtained from Google Cloud Console.
 3. Select Credentials
 4. Create an OAuth2 Client
 5. Copy the Client ID string
+
+### className
+
+Class to be added to the Google button outside wrapper
 
 ### signinCallback
 
