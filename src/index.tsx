@@ -40,7 +40,7 @@ export interface GsiButtonConfiguration {
   shape?: "rectangular" | "pill" | "circle" | "square";
   logo_alignment?: "left" | "center";
   width?: string;
-  local?: string;
+  locale?: string;
 }
 
 export interface PromptMomentNotification {
