@@ -47,6 +47,7 @@ The Client ID obtained from Google Cloud Console.
 3. Select Credentials
 4. Create an OAuth2 Client
 5. Copy the Client ID string
+6. Be sure to add all URL origins that will be using the Google Signin Button. Include `http://localhost:PORT` **AND** `http://localhost`
 
 ### className
 
