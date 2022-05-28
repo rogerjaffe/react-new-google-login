@@ -22,7 +22,7 @@ const App = () => {
   const CLIENT_ID = 'google-client-id-abc123'
   
   return (
-    <div className="App">
+    <div className="login-button">
         <GoogleLogin
           clientId={CLIENT_ID}
           signinCallback={signin}
@@ -51,7 +51,15 @@ The Client ID obtained from Google Cloud Console.
 
 ### className
 
-Class to be added to the Google button outside wrapper
+Class to be added to the Google button outside wrapper. To center the login button in a <div> use the following CSS in the enclosing <div>:
+
+```css
+.login-button {
+  height: 45px;
+  width: fit-content;
+  margin: 0 auto;
+}
+```
 
 ### signinCallback
 
